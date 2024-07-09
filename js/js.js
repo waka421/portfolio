@@ -11,6 +11,12 @@ const options = {
 
 heading.animate(keyframes, options);
 
+const loading = document.querySelector('#loading');
+
+window.addEventListener('load', () =>{
+  loading.classList.add('loaded');
+});
+
 const menuOpen = document.querySelector('#menu-open');
 const menuClose = document.querySelector('#menu-close');
 const menuPanel = document.querySelector('#menu-panel');
