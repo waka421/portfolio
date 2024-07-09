@@ -10,6 +10,7 @@ body {
 }
 
 #loading {
+  transition: all 1s;
   background-color: darkgrey;
   position: fixed;
   inset: 0;
