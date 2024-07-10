@@ -59,3 +59,15 @@ const fadeElements = document.querySelectorAll('.fadein');
 fadeElements.forEach((fadeElement) => {
   fadeObserver.observe(fadeElement);
 });
+
+const returnBtn = document.querySelector('.return');
+
+window.addEventListener('scroll', () => {
+  if(500 < window.scrollY) {
+  returnBtn.classList.add('returnbtn');
+} else {
+  returnBtn.classList.remove('returnbtn');
+}
+});
+
+
