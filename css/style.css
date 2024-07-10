@@ -3,10 +3,19 @@
 body {
   text-align: center;
   list-style: inside;
-  /* margin: 0 auto; */
-  background-color: aqua;
+  /* margin: 0; */
+  background-color: aquamarine;
+  box-sizing: border-box;
   font-size: 1.6rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
 }
 
 #loading {
@@ -24,22 +33,35 @@ body {
   visibility: hidden;
 }
 
+@media screen and (max-width:660px) { 
 .btn-menu {
   position:fixed;
-  right: 1rem;
-  top: 1rem;
-  z-index: 9999;
-
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  cursor: pointer;
+ }
 }
 
+@media screen and (max-width:660px) {
 #menu-panel {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9999;
-  background-color: rgb(59, 27, 27);
+  z-index: 9998;
+  background-color: darkblue;
   padding: 8rem 2rem 2rem;
   translate: 100vw;
+ }
+}
+
+@media screen and (min-width:661px) {
+  .btn-menu , .menu-list{
+    display: none;
+  }
+  /* .menu-list {
+    display: none;
+  } */
 }
 
 .menu-list {
@@ -52,11 +74,47 @@ body {
 
 .menu-list a {
   text-decoration: none;
-  color: chartreuse;
+  color: aliceblue;
   font-size: 2rem;
 }
 
+@media screen and (max-width:660px) {
+  .main-menu {
+    display: none;
+  }  
+  #menu-open {
+    width: 50px;
+  }
+  .return {
+    width: 50px;
+    height: auto;
+  }  
+}
+
+.main-menu ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.main-menu {
+  top: 0%;
+  position: fixed;
+  /* display: flex;
+  justify-content: center; */
+  list-style-type: none;
+  /* text-align: center; */
+  z-index: 9998;
+  background-color: darkblue;
+  width: 100vw;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 section {
+  top: 0%;
   height: 110vh;
 }
 
@@ -86,7 +144,7 @@ ul {
   background-color: blueviolet;
   height: auto;
   /* object-fit: contain; */
-  @media  screen and (min-width: 560px) {
+  @media  screen and (min-width: 660px) {
     display: flex;
   }
   /* @media screen and (min-width: 480px) {
@@ -103,6 +161,10 @@ ul {
 
 dt {
   font-weight: bold;
+}
+
+dd {
+  margin: 0 10%;
 }
 
 img {
@@ -124,9 +186,27 @@ img {
 
 a:hover {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .fadein {
   opacity: 0;
   padding-top: 5rem;
+}
+
+.return {
+  position: fixed;
+  /* display: block; */
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.returnbtn {
+  opacity: 1;
+  transition-duration: 1000ms;
+}
+
+small {
+  margin-left: -40%;
 }
