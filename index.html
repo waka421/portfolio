@@ -3,39 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Portfolio</title>
+  <!-- <link rel="stylesheet" href=""https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css""> -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/js.js" defer> </script>
 </head>
 <body>
-  <header>
-    <img src="imgs/open.png" alt="open" id="menu-open" class="btn-menu">
-    <div id="menu-panel">
-      <img src="imgs/close.png" alt="close" id="menu-close" class="btn-menu">
-      <ul class="menu-list">
-        <li><a href="#heading">myportfolio</a></li>
-        <li><a href="#profile">基本情報</a></li>
-        <li><a href="#skill">スキル</a></li>
-        <li><a href="#about">勉強中</a></li>
+<header>
+ <nav class="btn-menu">  
+   <img src="imgs/open.png" alt="open" id="menu-open" class="btn-menu">
+   <div id="menu-panel">
+     <img src="imgs/close.png" alt="close" id="menu-close" class="btn-menu">
+     <ul class="menu-list">
+     <li><a href="#heading">トップ</a></li>
+      <li><a href="#profile">基本情報</a></li>
+      <li><a href="#skill">スキル</a></li>
+      <li><a href="#about">勉強中</a></li>
+     </ul>
+   </div>
+ </nav>  
+ <nav class="main-menu">
+      <ul>
+       <li><a href="#heading">トップ</a></li>
+       <li><a href="#profile">基本情報</a></li>
+       <li><a href="#skill">スキル</a></li>
+       <li><a href="#about">勉強中</a></li>
       </ul>
-    </div>
-  </header>
+ </nav>
+</header>
   <div id="loading"></div>
-  <!-- <nav>
-  <a href="#heading">myportfolio</a>
-  <a href="#profile">基本情報</a>
-  <a href="#skill">スキル</a>
-  <a href="#about">勉強中</a>
-</nav> -->
+<main>
   <section id="heading" class="home">
     <h1 id="my">My Portfolio</h1>
   </section>
 <section id="profile" class="profile fadein">
   <h1>基本情報</h1>
-  <ul>
-    <li>名前:ああああああああああああああああああ</li>
-    <li>連絡先</li>
-  </ul>
+  <p>はじめまして 若田部怜司と申します。<br>
+    栃木在住の26歳です。<br>
+    レスポンシブデザインとUIを特に意識してサイトを作成しました。
+  </p>
+  <p>
+    GitHub - <a href="https://github.com/waka421" target="_blank" rel="noopener noreferrer">https://github.com/waka421</a>
+  </p>
 </section>
 <section id="skill" class="skill fadein">
   <img src="imgs/study.png" alt="study">
@@ -44,9 +53,10 @@
     <ul>
       <li>資格</li>
       <ul>
-        <li>HTML5プロフェッショナル認定試験レベル1</li>
-        <li>基本情報技術者</li>
-        <li>ITパスポート</li>
+        <li>HTML5プロフェッショナル認定試験レベル1&emsp;81/100</li>
+        <li>基本情報技術者 科目A:705/1000 科目B:675/1000</li>
+        <li>ITパスポート 770/1000</li>
+        <li>英検2級</li>
       </ul>
       <li>勉強中</li>
       <ul>
@@ -55,6 +65,7 @@
         <li>レスポンシブWebデザイン</li>
         <li>UI/UX</li>
         <li>SEO</li>
+        <li>GitHub</li>
         <li>vude.js</li>
         <li>応用情報技術者</li>
       </ul>
@@ -72,18 +83,26 @@
     <div class="fadein">
       <img src="imgs/pen.png" alt="pen" class="maru" id="pen">
       <dt>ステップアップに基本情報技術者へ</dt>
-      <dd>一気に難しくなる。擬似言語を毎日紙とペンでトレースして克服。</dd>
+      <dd>一気に難しくなる。初めは何も分からなかった科目Bの擬似言語。毎日紙とペンでトレースして克服。</dd>
     </div>
     <div class="fadein">
       <dt>HTML/CSS,JavaScriptの学習へ</dt>
       <dd>ドットインストールでの座学と資格取得の同時並行。資格取得の過程でAPIやSEO,レスポンシブWebデザインも学習が出来た。</dd>
     </div>
     <div class="fadein">
-      <img src="imgs/man.png" alt="man" class="maru">
+      <img src="imgs/portfolio.png" alt="man" class="maru">
       <dt>ポートフォリオ作成</dt>
-      <dd>webサイト作成の大変さと思い通りに動いた時の感動を経験する。この過程が一番楽しかった。</dd>
+      <dd>webサイト作成の大変さと思い通りに動いた時の感動を経験する。実際に動かしてみてしっくりくる配置やタイミングなどのUIを意識して作成。この過程が一番楽しく、ふと気が付くと時間が経っている。</dd>
     </div>  
     </dl>
   </section>
+  <!-- <a href="#heading"><img src="imgs/return.png" class="return" alt="return">
+  </a> -->
+</main>    
+<footer>
+  <p><small> © 2024 Reiji Wakatabe.</small></p>
+  <a href="#heading"><img src="imgs/return.png" class="return" alt="return">
+  </a>
+</footer>
 </body>
 </html>
