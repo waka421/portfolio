@@ -141,7 +141,7 @@ ul {
 }
 
 .skill{
-  background-color: blueviolet;
+  background-color: darkseagreen;
   height: auto;
   /* object-fit: contain; */
   @media  screen and (min-width: 660px) {
@@ -155,7 +155,7 @@ ul {
 
 
 .about{
-  background-color: brown;
+  background-color: navajowhite;
   height: auto;
 }
 
@@ -178,6 +178,7 @@ img {
   border-radius: 50%;
   max-width: 20vw;
   height: auto;
+  border: solid;
 }
 
 /* nav {
@@ -207,6 +208,11 @@ a:hover {
   transition-duration: 1000ms;
 }
 
+footer p {
+  height: 80px;
+}
+
 small {
   margin-left: -40%;
 }
+
