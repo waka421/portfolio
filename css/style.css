@@ -181,6 +181,10 @@ img {
   border: solid;
 }
 
+#smartphone {
+  max-height: 30vh;
+}
+
 /* nav {
   text-decoration: none;
 } */
